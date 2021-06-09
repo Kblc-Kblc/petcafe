@@ -1653,3 +1653,65 @@ let slider_speakers_lectory = new Swiper('.speakers-lectory-slider', {
 	//	el: '.swiper-scrollbar',
 	//},
 });
+
+
+let slider_participants = new Swiper('.participants-slider', {
+	/*
+	effect: 'fade',
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
+	*/
+	observer: true,
+	observeParents: true,
+	slidesPerView: 3,
+	spaceBetween: 0,
+	autoHeight: true,
+	speed: 800,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	//loop: true,
+	//preloadImages: false,
+	//lazy: true,
+	// Dotts
+	//pagination: {
+	//	el: '.slider-quality__pagging',
+	//	clickable: true,
+	//},
+	// Arrows
+	navigation: {
+		nextEl: '.participants-arrow__next',
+		prevEl: '.participants-arrow__prev',
+	},
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoHeight: true,
+		},
+		768: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+		},
+		992: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+		},
+		1300: {
+			slidesPerView: 3,
+			spaceBetween: 00,
+		},
+	},
+
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
