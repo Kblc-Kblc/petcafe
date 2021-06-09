@@ -1051,10 +1051,10 @@ body.ie ._ibg img {
 .popup-form-data__check {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  /* align-items: center; */
   color: #fff;
   padding-bottom: 10px;
 }
@@ -7867,3 +7867,7 @@ body .header-nav__list .zones__menu li {
 }
 
 /* Меню с зонами - конец - */
+
+.check-label {
+  display: block;
+}
